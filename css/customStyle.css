@@ -166,6 +166,7 @@
     font-weight: 400;
     font-size: 1.125rem; /* 18px */
     color: var(--color-primary);
+    line-height: 140%; /* 18px * 1.4 = 25.2px */
 }
 
 .banner-buttons {
