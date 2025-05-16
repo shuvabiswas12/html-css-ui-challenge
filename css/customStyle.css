@@ -1,5 +1,6 @@
 @import url("basicStyle.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Navbar starts */
 .navbar {
@@ -283,9 +284,181 @@
 
 /* Display starts */
 #display {
-    width: 100%;
-    height: auto;
+    width: 1440px;
+    height: 652px;
     padding: 100px 167px;
     background-color: var(--color-white);
 }
+
+#display .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#display .display-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.display-header {
+    font-family: var(--font-inter);
+    font-weight: 800;
+    font-size: 3rem; /* 48px */
+    line-height: 48px;
+    letter-spacing: 0;
+    color: var(--color-primary);
+}
+
+.display-body {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+    letter-spacing: 0;
+    color: var(--color-primary);
+}
+.display-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.btn-get--started,
+.btn-learn--more {
+    width: 129px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    letter-spacing: 0;
+    text-align: center;
+}
+
+/* Example styling – customize as needed */
+.btn-get--started {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-get--started::after {
+    content: " →";
+    font-weight: bold;
+}
+
+.btn-learn--more {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.image-box {
+    width: 542px;
+    height: 452px;
+    border-radius: 8px;
+    background-color: var(--color-light); /* Optional: placeholder background */
+    overflow: hidden; /* Optional: if using an <img> inside */
+}
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+    #display {
+        padding: 80px 48px;
+        height: auto;
+        width: 100%;
+    }
+
+    #display .container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-box {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .display-header {
+        font-size: 2.5rem; /* 40px */
+        line-height: 44px;
+    }
+
+    .display-body {
+        font-size: 0.9375rem; /* 15px */
+        line-height: 1.375rem; /* 22px */
+    }
+
+    .display-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-get--started,
+    .btn-learn--more {
+        width: auto;
+        padding: 12px 20px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    #display {
+        padding: 60px 24px;
+    }
+
+    .display-header {
+        font-size: 2rem; /* 32px */
+        line-height: 38px;
+    }
+
+    .display-body {
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */
+    }
+
+    .display-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-get--started,
+    .btn-learn--more {
+        width: 100%;
+    }
+
+    .image-box {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Extra Small (max-width: 480px) */
+@media (max-width: 480px) {
+    .display-header {
+        font-size: 1.5rem; /* 24px */
+        line-height: 32px;
+    }
+
+    .display-body {
+        font-size: 0.8125rem; /* 13px */
+        line-height: 1.125rem; /* 18px */
+    }
+
+    .btn-get--started,
+    .btn-learn--more {
+        font-size: 0.8125rem; /* 13px */
+        padding: 10px 16px;
+    }
+}
+
 /* Display ends */

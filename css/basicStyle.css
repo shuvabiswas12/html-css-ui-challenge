@@ -15,6 +15,7 @@
 :root {
     /* Fonts */
     --font-roboto: "Roboto", sans-serif;
+    --font-inter: "Inter", sans-serif;
 
     /* Colors */
     --color-primary: #6d758f;
