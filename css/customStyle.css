@@ -463,9 +463,203 @@
 /* -------------------------------------- */
 
 /* Quality section */
-/* #quality {
+#quality {
     width: 100%;
-    height: 679px;
+    min-height: 679px;
     padding: 100px 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
     background-color: var(--color-light);
-} */
+}
+
+#quality .container {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.quality-header {
+    font-family: var(--font-inter);
+    font-weight: 800;
+    font-size: 2.25rem; /* 36px */
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: bottom;
+    color: var(--color-primary);
+}
+
+.quality-body {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.boxes-container {
+    max-width: 1106px;
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+
+.box-item {
+    width: 30%;
+    padding: 32px 24px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.box-item--header {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 2.25rem; /* 36px */
+    line-height: 40px;
+    letter-spacing: 0;
+    margin: 0;
+    color: var(--color-white);
+}
+
+.box-item--subtitle {
+    font-family: var(--font-inter);
+    font-weight: 800;
+    font-size: 1rem; /* 16px */
+    line-height: 22px;
+    letter-spacing: 0;
+    margin: 4px 0;
+    color: var(--color-white);
+}
+
+.box-item--body {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 1rem; /* 16px */
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+    color: var(--color-white);
+}
+
+.box-item--button {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 1rem; /* 16px */
+    line-height: 22px;
+    letter-spacing: 0;
+    background-color: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+/* Tablet: max-width 992px */
+@media (max-width: 992px) {
+    #quality {
+        padding: 80px 48px;
+        gap: 40px;
+    }
+
+    .quality-header {
+        font-size: 2rem; /* 32px */
+        line-height: 38px;
+    }
+
+    .quality-body {
+        font-size: 0.9375rem; /* 15px */
+        line-height: 22px;
+    }
+
+    .boxes-container {
+        padding: 48px;
+        gap: 20px;
+    }
+
+    .box-item {
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box-item--body,
+    .box-item--subtitle,
+    .box-item--header {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Mobile: max-width 768px */
+@media (max-width: 768px) {
+    #quality {
+        padding: 60px 24px;
+        gap: 32px;
+    }
+
+    .quality-header {
+        font-size: 1.75rem; /* 28px */
+        line-height: 34px;
+    }
+
+    .quality-body {
+        font-size: 0.875rem; /* 14px */
+        line-height: 20px;
+    }
+
+    .boxes-container {
+        padding: 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-item {
+        width: 100%;
+        padding: 24px;
+    }
+}
+
+/* Extra small devices: max-width 480px */
+@media (max-width: 480px) {
+    .quality-header {
+        font-size: 1.5rem; /* 24px */
+        line-height: 32px;
+    }
+
+    .quality-body {
+        font-size: 0.8125rem; /* 13px */
+        line-height: 18px;
+    }
+
+    .box-item--button {
+        font-size: 0.875rem;
+    }
+}
+
+/* Quality ends */
+/* -------------------------------------- */
