@@ -284,17 +284,20 @@
 
 /* Display starts */
 #display {
-    width: 1440px;
-    height: 652px;
+    width: 100%;
+    height: auto;
     padding: 100px 167px;
     background-color: var(--color-white);
 }
 
 #display .container {
+    max-width: 1440px;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 48px;
 }
 
 #display .display-text {
@@ -320,9 +323,11 @@
     letter-spacing: 0;
     color: var(--color-primary);
 }
+
 .display-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -333,7 +338,6 @@
     border-radius: 6px;
     border: none;
     cursor: pointer;
-
     font-family: var(--font-inter);
     font-weight: 600;
     font-size: 0.875rem; /* 14px */
@@ -342,7 +346,6 @@
     text-align: center;
 }
 
-/* Example styling – customize as needed */
 .btn-get--started {
     background-color: var(--color-primary);
     color: var(--color-white);
@@ -363,22 +366,18 @@
     width: 542px;
     height: 452px;
     border-radius: 8px;
-    background-color: var(--color-light); /* Optional: placeholder background */
-    overflow: hidden; /* Optional: if using an <img> inside */
+    background-color: var(--color-light);
+    overflow: hidden;
 }
 
-/* Tablet (max-width: 992px) */
+/* Tablet */
 @media (max-width: 992px) {
     #display {
         padding: 80px 48px;
-        height: auto;
-        width: 100%;
     }
 
     #display .container {
         flex-direction: column;
-        gap: 40px;
-        align-items: center;
         text-align: center;
     }
 
@@ -400,7 +399,6 @@
 
     .display-buttons {
         justify-content: center;
-        flex-wrap: wrap;
     }
 
     .btn-get--started,
@@ -410,7 +408,7 @@
     }
 }
 
-/* Mobile (max-width: 768px) */
+/* Mobile */
 @media (max-width: 768px) {
     #display {
         padding: 60px 24px;
@@ -428,7 +426,7 @@
 
     .display-buttons {
         flex-direction: column;
-        gap: 12px;
+        align-items: center;
     }
 
     .btn-get--started,
@@ -442,7 +440,7 @@
     }
 }
 
-/* Extra Small (max-width: 480px) */
+/* Extra Small Devices */
 @media (max-width: 480px) {
     .display-header {
         font-size: 1.5rem; /* 24px */
@@ -462,3 +460,12 @@
 }
 
 /* Display ends */
+/* -------------------------------------- */
+
+/* Quality section */
+/* #quality {
+    width: 100%;
+    height: 679px;
+    padding: 100px 167px;
+    background-color: var(--color-light);
+} */
