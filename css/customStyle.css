@@ -58,6 +58,16 @@
     color: var(--color-white);
 }
 
+.btn-arrow {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn-arrow:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
 .btn-arrow::after {
     content: " →";
     font-weight: bold;
@@ -188,17 +198,28 @@
     font-family: var(--font-roboto);
     font-weight: 500;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .primary-button {
-    background-color: var(--color-primary) !important;
+    background-color: var(--color-primary);
     color: var(--color-white);
+}
+
+.primary-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .secondary-button {
     background-color: transparent;
     color: var(--color-primary);
     letter-spacing: 0.5px;
+}
+
+.secondary-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 /* Tablet (≤992px) */
@@ -258,3 +279,13 @@
 }
 
 /* Banner ends */
+/* -------------------------------------- */
+
+/* Display starts */
+#display {
+    width: 100%;
+    height: auto;
+    padding: 100px 167px;
+    background-color: var(--color-white);
+}
+/* Display ends */
