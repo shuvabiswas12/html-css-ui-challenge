@@ -48,102 +48,12 @@ body {
     min-width: 0;
 }
 
-/* Default: each column takes full width */
-.col-1 {
-    flex: 0 0 8.33%;
-}
-.col-2 {
-    flex: 0 0 16.66%;
-}
 .col-3 {
     flex: 0 0 25%;
-}
-.col-4 {
-    flex: 0 0 33.33%;
-}
-.col-5 {
-    flex: 0 0 41.66%;
-}
-.col-6 {
-    flex: 0 0 50%;
-}
-.col-7 {
-    flex: 0 0 58.33%;
-}
-.col-8 {
-    flex: 0 0 66.66%;
-}
-.col-9 {
-    flex: 0 0 75%;
-}
-.col-10 {
-    flex: 0 0 83.33%;
-}
-.col-11 {
-    flex: 0 0 91.66%;
-}
-.col-12 {
-    flex: 0 0 100%;
 }
 
 .text-center {
     text-align: center;
-}
-
-.mt-1 {
-    margin-top: 0.5rem; /* 8px */
-}
-.mt-2 {
-    margin-top: 1rem; /* 16px */
-}
-.mt-3 {
-    margin-top: 1.5rem; /* 24px */
-}
-
-.mb-1 {
-    margin-bottom: 0.5rem; /* 8px */
-}
-.mb-2 {
-    margin-bottom: 1rem; /* 16px */
-}
-.mb-3 {
-    margin-bottom: 1.5rem; /* 24px */
-}
-
-.p-1 {
-    padding: 0.5rem; /* 8px */
-}
-.p-2 {
-    padding: 1rem; /* 16px */
-}
-.p-3 {
-    padding: 1.5rem; /* 24px */
-}
-
-/* Base Font Sizes */
-.fs-xs {
-    font-size: 0.75rem; /* 12px */
-}
-.fs-sm {
-    font-size: 0.875rem; /* 14px */
-}
-.fs-md {
-    font-size: 1rem; /* 16px */
-}
-.fs-lg {
-    font-size: 1.25rem; /* 20px */
-}
-.fs-xl {
-    font-size: 1.5rem; /* 24px */
-}
-.fs-2xl {
-    font-size: 2rem; /* 32px */
-}
-.fs-3xl {
-    font-size: 2.5rem; /* 40px */
-}
-.fs-4xl {
-    font-size: 3rem; /* 48px */
 }
 
 /* Text Colors */
@@ -182,45 +92,8 @@ body {
 
 /* Responsive (Mobile First) */
 @media (max-width: 768px) {
-    .col,
-    .col-1,
-    .col-2,
-    .col-3,
-    .col-4,
-    .col-5,
-    .col-6,
-    .col-7,
-    .col-8,
-    .col-9,
-    .col-10,
-    .col-11,
-    .col-12 {
+    .col-3 {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-
-    .fs-xs {
-        font-size: 0.7rem;
-    }
-    .fs-sm {
-        font-size: 0.8rem;
-    }
-    .fs-md {
-        font-size: 0.9rem;
-    }
-    .fs-lg {
-        font-size: 1.1rem;
-    }
-    .fs-xl {
-        font-size: 1.3rem;
-    }
-    .fs-2xl {
-        font-size: 1.6rem;
-    }
-    .fs-3xl {
-        font-size: 2rem;
-    }
-    .fs-4xl {
-        font-size: 2.5rem;
     }
 }

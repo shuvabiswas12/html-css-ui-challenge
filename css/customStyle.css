@@ -39,7 +39,7 @@
 }
 
 .navbar a:hover {
-    color: #000;
+    font-weight: 800;
 }
 
 /* Buttons */
@@ -149,6 +149,8 @@
 }
 
 #banner .container {
+    width: 100%;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -675,7 +677,8 @@
 }
 
 #testimonial .container,
-#service .container {
+#service .container,
+#gallery .container {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -806,6 +809,7 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     letter-spacing: 0;
+    color: var(--color-primary);
 }
 
 .service-body {
@@ -814,6 +818,7 @@
     font-size: 0.875rem;
     line-height: 1.375rem;
     letter-spacing: 0;
+    color: var(--color-primary);
 }
 
 .service-btn {
@@ -1051,4 +1056,68 @@
 }
 
 /* Footer ends */
+/* -------------------------------------- */
+
+/* Gallery starts */
+#gallery {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#gallery .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gallery-wrapper {
+    max-width: 1105px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.gallery-col {
+    display: grid;
+    gap: 24px;
+}
+
+.col-1,
+.col-3 {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.col-2 {
+    grid-template-rows: 2fr 1fr;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 1105px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-col {
+        grid-template-rows: unset;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Gallery ends */
 /* -------------------------------------- */
