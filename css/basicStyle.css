@@ -172,6 +172,14 @@ body {
     background-color: var(--color-white);
 }
 
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 /* Responsive (Mobile First) */
 @media (max-width: 768px) {
     .col,
