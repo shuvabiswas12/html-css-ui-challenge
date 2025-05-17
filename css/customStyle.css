@@ -795,7 +795,7 @@
     padding: 32px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
     justify-content: center;
     align-items: flex-start;
 }
